@@ -49,18 +49,20 @@ unpack unpacka (
     .x(a),
     .sign(a_sign),
     .Exponent(a_Exponent),
-    .Fraction_withhidden_1(a_fraction)
-);
+    .Fraction_withhidden_1(a_fraction));
 unpack unpackb (
     .x(b),
     .sign(b_sign),
     .Exponent(b_Exponent),
-    .Fraction_withhidden_1(b_fraction)
-);
+    .Fraction_withhidden_1(b_fraction));
+
+
 
 assign e_ab = (a_Exponent>b_Exponent) ? a_Exponent - b_Exponent : b_Exponent - a_Exponent ;
 assign cin = a_sign ^ b_sign ;
 assign signlogic = (a[30:0]>b[30:0]) ? 1:0;
+
+
 
 Add add_sub (
     .a(a_fraction_reg),
@@ -69,6 +71,8 @@ Add add_sub (
     .s(addfrac),
     .cout(carry)
 );
+
+
 
 always @(posedge clk or posedge rst)
 begin
@@ -131,40 +135,54 @@ begin
                 Exponent<=a_Exponent;
                 state <=2;
             end
+
+
             else if (a_Exponent<b_Exponent)
             begin
+
+
                 a_fraction_reg <= a_fraction_reg >> e_ab;
                 Exponent<=b_Exponent;
                 state <=2;
             end
+
             else
             begin
                 Exponent<=b_Exponent;
                 state <=2;
             end
+
         end
         2:
 
         begin
             if (cin)
+            
             begin
+
                 if (a_sign_reg)
+
                 begin
                     sign_reg<= signlogic  ;
                     a_fraction_reg<=~a_fraction_reg;
                     state <= 3;
                 end
+
             else
             begin
+
                 sign_reg<= !signlogic  ;
                 b_fraction_reg<=~b_fraction_reg;
                 state <=3;
+
             end
             end 
             else 
             begin
+
                 sign_reg<= a_sign_reg;
                 state <=3;
+
             end
         end
         3: 
@@ -172,6 +190,7 @@ begin
             outfrac_reg<=addfrac;
             carry_reg<=carry;
             state <=4;
+
         end
         4:
         begin
@@ -202,6 +221,8 @@ begin
                     state <= 4;
                     carry_reg<=1;
                 end
+
+
                 else if (outfrac_reg[23]!=1)
                 begin
                     state <= 5;
@@ -210,8 +231,12 @@ begin
                 begin
                     state <=6;
                 end
+
+
             end
+
         end
+
         5:
         begin
             outfrac_reg<= outfrac_reg<< 1 ;
@@ -229,12 +254,18 @@ begin
                 state <=7;
             end
         end
+
+
         7:
         begin
             state<= 8  ;
             done <= 1  ;
         end 
+
+
+
         8:
+
         begin
             state<= 0;
             done<=0;
@@ -249,8 +280,7 @@ pack pack (
 .x(out),
 .sign(sign_reg),
 .Exponent(Exponent),
-.Fraction_withhidden_1(outfrac_reg)
-);
+.Fraction_withhidden_1(outfrac_reg));
 
 
 
