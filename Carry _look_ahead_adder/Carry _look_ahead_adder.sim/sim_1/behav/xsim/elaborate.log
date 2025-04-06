@@ -1,0 +1,48 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto e93adcf612cb4479afa4c08d348948c0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_CLA_behav xil_defaultlib.tb_CLA xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-2572] too many parameters for module instance uut [C:/Users/Amr/Documents/verliog_projects/Carry _look_ahead_adder/Carry _look_ahead_adder.srcs/sim_1/new/tb_CLA.v:20]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port C [C:/Users/Amr/Documents/verliog_projects/Carry _look_ahead_adder/Carry _look_ahead_adder.srcs/sources_1/new/_16Bit_CLA.v:18]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port C [C:/Users/Amr/Documents/verliog_projects/Carry _look_ahead_adder/Carry _look_ahead_adder.srcs/sources_1/new/_16Bit_CLA.v:26]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port C [C:/Users/Amr/Documents/verliog_projects/Carry _look_ahead_adder/Carry _look_ahead_adder.srcs/sources_1/new/_16Bit_CLA.v:34]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port C [C:/Users/Amr/Documents/verliog_projects/Carry _look_ahead_adder/Carry _look_ahead_adder.srcs/sources_1/new/_16Bit_CLA.v:42]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port C [C:/Users/Amr/Documents/verliog_projects/Carry _look_ahead_adder/Carry _look_ahead_adder.srcs/sources_1/new/_16Bit_CLA.v:50]
+WARNING: [VRFC 10-278] actual bit length 15 differs from formal bit length 16 for port c [C:/Users/Amr/Documents/verliog_projects/Carry _look_ahead_adder/Carry _look_ahead_adder.srcs/sources_1/new/CLA_64_Bit.v:38]
+WARNING: [VRFC 10-278] actual bit length 15 differs from formal bit length 16 for port c [C:/Users/Amr/Documents/verliog_projects/Carry _look_ahead_adder/Carry _look_ahead_adder.srcs/sources_1/new/CLA_64_Bit.v:46]
+WARNING: [VRFC 10-278] actual bit length 15 differs from formal bit length 16 for port c [C:/Users/Amr/Documents/verliog_projects/Carry _look_ahead_adder/Carry _look_ahead_adder.srcs/sources_1/new/CLA_64_Bit.v:54]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/Amr/Documents/verliog_projects/Carry _look_ahead_adder/Carry _look_ahead_adder.srcs/sources_1/new/4-bit_Carry_Look_Ahead.v" Line 1. Module bit_4_Carry_Look_Ahead doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Amr/Documents/verliog_projects/Carry _look_ahead_adder/Carry _look_ahead_adder.srcs/sources_1/new/4-bit_Carry_Look_Ahead.v" Line 1. Module bit_4_Carry_Look_Ahead doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Amr/Documents/verliog_projects/Carry _look_ahead_adder/Carry _look_ahead_adder.srcs/sources_1/new/4-bit_Carry_Look_Ahead.v" Line 1. Module bit_4_Carry_Look_Ahead doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Amr/Documents/verliog_projects/Carry _look_ahead_adder/Carry _look_ahead_adder.srcs/sources_1/new/4-bit_Carry_Look_Ahead.v" Line 1. Module bit_4_Carry_Look_Ahead doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Amr/Documents/verliog_projects/Carry _look_ahead_adder/Carry _look_ahead_adder.srcs/sources_1/new/4-bit_Carry_Look_Ahead.v" Line 1. Module bit_4_Carry_Look_Ahead doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Amr/Documents/verliog_projects/Carry _look_ahead_adder/Carry _look_ahead_adder.srcs/sources_1/new/4-bit_Carry_Look_Ahead.v" Line 1. Module bit_4_Carry_Look_Ahead doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Amr/Documents/verliog_projects/Carry _look_ahead_adder/Carry _look_ahead_adder.srcs/sources_1/new/4-bit_Carry_Look_Ahead.v" Line 1. Module bit_4_Carry_Look_Ahead doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Amr/Documents/verliog_projects/Carry _look_ahead_adder/Carry _look_ahead_adder.srcs/sources_1/new/4-bit_Carry_Look_Ahead.v" Line 1. Module bit_4_Carry_Look_Ahead doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Amr/Documents/verliog_projects/Carry _look_ahead_adder/Carry _look_ahead_adder.srcs/sources_1/new/4-bit_Carry_Look_Ahead.v" Line 1. Module bit_4_Carry_Look_Ahead doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Amr/Documents/verliog_projects/Carry _look_ahead_adder/Carry _look_ahead_adder.srcs/sources_1/new/4-bit_Carry_Look_Ahead.v" Line 1. Module bit_4_Carry_Look_Ahead doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Amr/Documents/verliog_projects/Carry _look_ahead_adder/Carry _look_ahead_adder.srcs/sources_1/new/4-bit_Carry_Look_Ahead.v" Line 1. Module bit_4_Carry_Look_Ahead doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Amr/Documents/verliog_projects/Carry _look_ahead_adder/Carry _look_ahead_adder.srcs/sources_1/new/4-bit_Carry_Look_Ahead.v" Line 1. Module bit_4_Carry_Look_Ahead doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Amr/Documents/verliog_projects/Carry _look_ahead_adder/Carry _look_ahead_adder.srcs/sources_1/new/4-bit_Carry_Look_Ahead.v" Line 1. Module bit_4_Carry_Look_Ahead doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Amr/Documents/verliog_projects/Carry _look_ahead_adder/Carry _look_ahead_adder.srcs/sources_1/new/4-bit_Carry_Look_Ahead.v" Line 1. Module bit_4_Carry_Look_Ahead doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Amr/Documents/verliog_projects/Carry _look_ahead_adder/Carry _look_ahead_adder.srcs/sources_1/new/4-bit_Carry_Look_Ahead.v" Line 1. Module bit_4_Carry_Look_Ahead doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Amr/Documents/verliog_projects/Carry _look_ahead_adder/Carry _look_ahead_adder.srcs/sources_1/new/4-bit_Carry_Look_Ahead.v" Line 1. Module bit_4_Carry_Look_Ahead doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Amr/Documents/verliog_projects/Carry _look_ahead_adder/Carry _look_ahead_adder.srcs/sources_1/new/4-bit_Carry_Look_Ahead.v" Line 1. Module bit_4_Carry_Look_Ahead doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Amr/Documents/verliog_projects/Carry _look_ahead_adder/Carry _look_ahead_adder.srcs/sources_1/new/4-bit_Carry_Look_Ahead.v" Line 1. Module bit_4_Carry_Look_Ahead doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Amr/Documents/verliog_projects/Carry _look_ahead_adder/Carry _look_ahead_adder.srcs/sources_1/new/4-bit_Carry_Look_Ahead.v" Line 1. Module bit_4_Carry_Look_Ahead doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Amr/Documents/verliog_projects/Carry _look_ahead_adder/Carry _look_ahead_adder.srcs/sources_1/new/4-bit_Carry_Look_Ahead.v" Line 1. Module bit_4_Carry_Look_Ahead doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Amr/Documents/verliog_projects/Carry _look_ahead_adder/Carry _look_ahead_adder.srcs/sources_1/new/4-bit_Carry_Look_Ahead.v" Line 1. Module bit_4_Carry_Look_Ahead doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SUM_64_bit
+Compiling module xil_defaultlib.generation_Logic_64Bit
+Compiling module xil_defaultlib.CLA_4_Bit
+Compiling module xil_defaultlib.bit_4_Carry_Look_Ahead
+Compiling module xil_defaultlib.Bit16_CLA
+Compiling module xil_defaultlib.CLA_64_Bit
+Compiling module xil_defaultlib.tb_CLA
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_CLA_behav

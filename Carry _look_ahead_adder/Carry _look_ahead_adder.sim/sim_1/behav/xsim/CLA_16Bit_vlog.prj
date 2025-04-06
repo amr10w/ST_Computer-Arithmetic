@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Carry _look_ahead_adder.srcs/sources_1/new/4-bit_Carry_Look_Ahead.v" \
+"../../../../Carry _look_ahead_adder.srcs/sources_1/new/CLA_4_Bit.v" \
+"../../../../Carry _look_ahead_adder.srcs/sources_1/new/SUM_CLA_16Bit.v" \
+"../../../../Carry _look_ahead_adder.srcs/sources_1/new/_16Bit_CLA.v" \
+"../../../../Carry _look_ahead_adder.srcs/sources_1/new/generation_Logic.v" \
+"../../../../Carry _look_ahead_adder.srcs/sources_1/new/CLA_16Bit.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
